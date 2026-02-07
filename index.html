@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinkal Panda | Portfolio</title>
+    <meta name="description" content="Portfolio of Rinkal Panda, Software Engineer Graduate.">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Ionicons for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar / Navigation (Vertical Pill) -->
+        <nav class="sidebar">
+            <div class="logo">RP</div>
+            <div class="nav-links">
+                <a href="#" class="active" title="Dashboard"><ion-icon name="grid-outline"></ion-icon></a>
+                <a href="#projects" title="Projects"><ion-icon name="folder-open-outline"></ion-icon></a>
+                <a href="#about" title="About"><ion-icon name="person-outline"></ion-icon></a>
+                <a href="mailto:rinkal861@gmail.com" title="Contact"><ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+            <div class="settings">
+                <ion-icon name="settings-outline"></ion-icon>
+            </div>
+        </nav>
+
+        <!-- Main Grid -->
+        <main class="bento-grid">
+
+            <!-- Header / Search Bar Area -->
+            <div class="header-area">
+                <div class="search-bar">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" placeholder="Search commands..." disabled>
+                    <span class="shortcut">Ctrl + K</span>
+                </div>
+                <div class="date-display" id="date-display">
+                    <!-- Date inserted by JS -->
+                </div>
+            </div>
+
+            <!-- Profile Card (Large) -->
+            <div class="card profile-card">
+                <div class="profile-content">
+                    <div class="avatar-placeholder">RP</div>
+                    <h1>Rinkal Panda</h1>
+                    <p class="role">Software Engineer Graduate</p>
+                    <p class="location"><ion-icon name="location-outline"></ion-icon> Brahmapur, Odisha, India</p>
+                    <div class="status-badge">
+                        <span class="dot"></span> Open to Work
+                    </div>
+                </div>
+                <div class="social-links-row">
+                    <a href="https://www.linkedin.com/in/rinkal-panda-43a14825a" target="_blank"
+                        class="social-btn linkedin">
+                        <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+                    </a>
+                    <a href="mailto:rinkal861@gmail.com" class="social-btn email">
+                        <ion-icon name="mail-outline"></ion-icon> Email
+                    </a>
+                </div>
+            </div>
+
+            <!-- Summary Card -->
+            <div class="card summary-card">
+                <div class="card-header">
+                    <h2><ion-icon name="person-circle-outline"></ion-icon> About Me</h2>
+                </div>
+                <div class="scroll-content">
+                    <p>
+                        Passionate about leveraging computer science expertise to drive meaningful change and
+                        innovation.
+                        My goal is to work passionately and show determination, contributing positively to any industry
+                        I may join.
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        Let's connect and explore opportunities to collaborate, innovate, and drive positive change
+                        together.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Education Card -->
+            <div class="card education-card">
+                <div class="card-header">
+                    <h2><ion-icon name="school-outline"></ion-icon> Education</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time">Dec 2021 - May 2025</div>
+                        <div class="content">
+                            <h3>B.Tech Computer Science</h3>
+                            <p>Vignan Institute of Technology and Management</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">Jul 2018 - May 2020</div>
+                        <div class="content">
+                            <h3>Computer Science</h3>
+                            <p>Sankalp Senior Secondary School</p>
+                        </div>
+                    </div>
+                    <!-- Added third one for completeness based on resume -->
+                    <div class="timeline-item">
+                        <div class="time">Mar 2005 - Mar 2018</div>
+                        <div class="content">
+                            <h3>Schooling</h3>
+                            <p>Guru Nanak Public School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Card -->
+            <div class="card skills-card">
+                <div class="card-header">
+                    <h2><ion-icon name="flash-outline"></ion-icon> Top Skills</h2>
+                </div>
+                <div class="skills-wrapper">
+                    <span class="skill-tag">Computer Science</span>
+                    <span class="skill-tag">Programming</span>
+                    <span class="skill-tag">Communication</span>
+                    <!-- Added some inferred generic skills since resume was sparse -->
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Teamwork</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+
+            <!-- Projects Placeholder (Since none were in resume) -->
+            <div class="card projects-card">
+                <div class="card-header">
+                    <h2><ion-icon name="code-slash-outline"></ion-icon> Projects</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-item placeholder">
+                        <div class="icon-box"><ion-icon name="add-circle-outline"></ion-icon></div>
+                        <h3>Project Showcase</h3>
+                        <p>Coming soon...</p>
+                    </div>
+                    <div class="project-item placeholder">
+                        <div class="icon-box"><ion-icon name="cube-outline"></ion-icon></div>
+                        <h3>Academic Work</h3>
+                        <p>University Projects</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats / Extra Card (Filler for grid balance) -->
+            <div class="card stats-card">
+                <div class="stat-item">
+                    <span class="num">2025</span>
+                    <span class="label">Graduation</span>
+                </div>
+                <div class="stat-item">
+                    <span class="num">Open</span>
+                    <span class="label">Status</span>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chat-widget">
+        <button class="chat-toggle">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+        </button>
+
+        <div class="chat-window">
+            <div class="chat-header">
+                <h3>Chat with Rinkal's AI</h3>
+                <button class="close-chat"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot">
+                    Hi! I'm Rinkal's AI assistant. Ask me anything about my skills, education, or experience!
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-btn"><ion-icon name="send-outline"></ion-icon></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
