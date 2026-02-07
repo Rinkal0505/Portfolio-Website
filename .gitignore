@@ -1,0 +1,14 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editors
+.vscode/
+.idea/
+
+# Local Dev
+.python_history
+__pycache__/
